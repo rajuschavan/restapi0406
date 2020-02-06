@@ -4,9 +4,11 @@ pipeline
   stages
   {
     stage ("Git CheckOut")
-    steps
     {
+      steps
+      {
               git credentialsId: 'rchavan', url: 'https://github.com/rajuschavan/restapi0406'
-     } 
+      } 
+    }  
   }
  }
